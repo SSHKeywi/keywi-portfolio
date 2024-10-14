@@ -87,7 +87,6 @@ html::-webkit-scrollbar-thumb {
   color: var(--bg-color);
 }
 
-
 .navbar a {
   color: var(--text-color);
   font-size: 1.8rem;
@@ -139,9 +138,9 @@ span {
 }
 
 .home-img {
-  width: 32vw; /* Ajustez la taille en fonction de vos besoins */
-  border-radius: 20%; /* Ajouter des coins arrondis à l'image */
-  box-shadow: 0 0 25px var(--main-color); /* Effet d'ombre pour l'image */
+  width: 32vw;
+  border-radius: 20%;
+  box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   display: block;
 }
@@ -162,7 +161,6 @@ span {
   font-size: 1.8rem;
   font-weight: 500;
 }
-
 
 .social-icon a {
   display: inline-flex;
@@ -254,72 +252,72 @@ span {
 
 @keyframes typing1 {
   0% {
-      max-width: 0;
-      opacity: 1;
+    max-width: 0;
+    opacity: 1;
   }
   10% {
-      max-width: 20ch;
-      opacity: 1;
+    max-width: 20ch;
+    opacity: 1;
   }
   20% {
-      max-width: 20ch;
-      opacity: 1;
+    max-width: 20ch;
+    opacity: 1;
   }
   30% {
-      max-width: 0;
-      opacity: 1;
+    max-width: 0;
+    opacity: 1;
   }
   30.01% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
 @keyframes typing2 {
   30% {
-      opacity: 0;
+    opacity: 0;
   }
   40% {
-      max-width: 0;
-      opacity: 1;
+    max-width: 0;
+    opacity: 1;
   }
   50% {
-      max-width: 34ch;
-      opacity: 1;
+    max-width: 34ch;
+    opacity: 1;
   }
   60% {
-      max-width: 34ch;
-      opacity: 1;
+    max-width: 34ch;
+    opacity: 1;
   }
   70% {
-      max-width: 0;
-      opacity: 1;
+    max-width: 0;
+    opacity: 1;
   }
   70.01% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
 @keyframes typing3 {
   70% {
-      opacity: 0;
+    opacity: 0;
   }
   80% {
-      max-width: 0;
-      opacity: 1;
+    max-width: 0;
+    opacity: 1;
   }
   90% {
-      max-width: 12ch;
-      opacity: 1;
+    max-width: 12ch;
+    opacity: 1;
   }
   100% {
-      max-width: 12ch;
-      opacity: 1;
+    max-width: 12ch;
+    opacity: 1;
   }
 }
 
@@ -334,14 +332,14 @@ span {
 }
 
 @keyframes cursor-blink {
-  0%, 100% {
-      opacity: 1;
+  0%,
+  100% {
+    opacity: 1;
   }
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
-
 
 .heading {
   text-align: center;
@@ -356,10 +354,17 @@ span {
   margin-bottom: 1rem;
 }
 
-/* Skills Section */
+/* Skills Section with Bubble Animation */
 .skills {
   background: var(--bg-color);
-  padding: 2rem;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills .heading {
+  position: relative;
+  z-index: 2;
 }
 
 .line {
@@ -367,169 +372,115 @@ span {
   border-radius: 1rem;
   background: var(--main-color);
   margin-bottom: 2rem;
-}
-
-.columns {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Deux colonnes par ligne */
-  gap: 2rem;
-}
-
-.column-wrapper {
-  flex: 1;
-  min-width: 280px;
-  max-width: 100%; /* Permet de s'adapter dans le grid */
-  box-sizing: border-box;
-}
-
-.column-wrapper .sub-heading {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.column-wrapper .container {
-  background: rgba(225, 53, 44, 0.48);
-  color: var(--text-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 0 auto;
-}
-
-.row {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Grille à 6 colonnes */
-  gap: 2rem;
-  justify-items: center;
-}
-
-.softskillsContainer {
-  padding-bottom: 2.8rem;
-}
-
-/* Styles généraux pour softskills et langues */
-.softskills-item,
-.languages-item {
-  width: 100%;
-  max-width: 200px;
-  flex: 1 1 auto;
-}
-
-/* Styles spécifiques pour software */
-.software-item {
-  flex: 0 0 auto;
-  width: 160px; /* Exemple de largeur réduite */
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-
-.logo-container {
-  background-color: #ffffffc7;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  width: 15rem;
-  aspect-ratio: 1 / 1;
-}
-
-.logo-container:hover {
-  box-shadow: 0 4px 10px var(--main-color);
-  transform: scale(1.03);
-  cursor: pointer;
-}
-
-.bar {
-  padding: 0.7rem;
-  border-radius: 1rem;
-  background: var(--bg-color);
-  box-shadow: 0 4px 10px var(--main-color);
-  transition: 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15rem;
-}
-
-.bar:hover {
-  box-shadow: 0 4px 10px var(--main-color);
-  transform: scale(1.03);
-  cursor: pointer;
-}
-
-.bar .info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.bar .info span {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-/* Software Scroll Container */
-.softwareContainer.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  padding-bottom: 2rem;
-  gap: 1rem; /* Ajustez la valeur selon vos besoins */
-  flex-wrap: nowrap; /* Assure que les items restent sur une seule ligne */
   position: relative;
+  z-index: 2;
 }
 
-.softwareContainer.scroll-container::-webkit-scrollbar {
-  height: 0.8rem;
+#switchModeButton {
+  position: relative;
+  width: 80px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition: background-color 0.3s;
 }
 
-.softwareContainer.scroll-container::-webkit-scrollbar-track {
-  background: var(--bg-color);
+#switchModeButton .switch {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.3s;
 }
 
-.softwareContainer.scroll-container::-webkit-scrollbar-thumb {
-  background: var(--main-color);
-  border-radius: 0.4rem;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Prend toute la hauteur de la page */
+  background-color: rgba(255, 255, 255, 0);
 }
 
-/* Icons and Images */
-.software-logo {
-  width: 7rem;
-  height: 7rem;
+#switchModeButton.active .switch {
+  transform: translateX(44px); /* Déplacement du levier lors du changement */
+}
+
+#switchModeButton.active {
+  background-color: #b81c1c;
+}
+
+.bubble-container {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  height: 69vh; /* Hauteur par défaut */
+
+}
+
+.bubble {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(184, 28, 28, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  text-align: center;
+  cursor: grab;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+}
+
+.bubble img {
+  width: 50%;
+  height: 50%;
   object-fit: contain;
 }
 
-.softskills-icon,
-.languages-icon {
-  font-size: 4rem;
-  color: var(--main-color);
+.bubble span {
+  position: absolute;
+  bottom: -2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--text-color);
+  width: max-content;
+  z-index: 3;
 }
 
-/* Popup */
+.bubble:active {
+  cursor: grabbing;
+}
+
+/* Popup Styles */
 .popup {
-  display: none; /* Caché par défaut */
+  display: none;
   position: fixed;
-  z-index: 999; /* Au-dessus des autres éléments */
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .popup-content {
   position: relative;
   background-color: rgb(121, 23, 18);
-  margin: 10% auto; /* Centré verticalement */
+  margin: 10% auto;
   padding: 20px;
   width: 80%;
   max-width: 1300px;
@@ -548,7 +499,8 @@ span {
 
 .popup-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -559,6 +511,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .popup-logo {
@@ -572,16 +525,15 @@ span {
 .popup-text {
   flex: 2;
   padding-left: 50px;
+  color: #ffffff;
 }
 
 .popup-text h2 {
   margin-bottom: 15px;
   font-size: 3rem;
-  color: #ffffff;
 }
 
 .popup-text p {
-  color: #ffffff;
   font-size: 1.4rem;
   line-height: 1.5;
 }
@@ -610,38 +562,9 @@ span {
 }
 
 /* Responsive Styles */
-@media (max-width: 1470px) {
-  .row {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Correction: enlevez grid-template-columns ici */
-  }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
   .home {
     gap: 4rem;
-  }
-
-  /* Ajuster les largeurs des éléments */
-  .logo-container {
-    width: 12rem;
-  }
-
-  .bar {
-    width: 12rem;
-  }
-}
-
-@media (max-width: 1080px) {
-  .columns {
-    grid-template-columns: 1fr 1fr; /* Deux colonnes par ligne */
-  }
-
-  .row {
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur petits écrans */
-  }
-
-  .column-wrapper {
-    max-width: 100%;
   }
 
   .header {
@@ -653,22 +576,22 @@ span {
   }
 
   .home {
-    flex-direction: column; /* Assure que les éléments soient empilés verticalement */
+    flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centre les éléments horizontalement */
-    text-align: center; /* Centre le texte */
+    align-items: center;
+    text-align: center;
   }
 
   .home-img {
-    width: 100%; /* L'image prend toute la largeur de son conteneur */
-    max-width: 300px; /* Limite la largeur maximale de l'image sur mobile */
-    margin: 0 auto; /* Centre l'image horizontalement */
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .home-img img {
-    width: 100%; /* L'image prendra 100% de la largeur de son conteneur */
-    height: auto; /* Garde les proportions de l'image */
-    border-radius: 20%; /* Coins arrondis */
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
   }
 
   .home .home-content h3 {
@@ -715,31 +638,32 @@ span {
     border-bottom: 0.5rem solid var(--main-color);
   }
 
-  /* Ajustements des largeurs des éléments */
-  .logo-container {
-    width: 12rem;
-  }
-
-  .bar {
-    width: 12rem;
-  }
   .typing-text {
-    position: relative; /* S'assurer que le parent est relatif pour que l'absolute fonctionne */
-    text-align: center; /* Centre le contenu dans le conteneur */
+    position: relative;
+    text-align: center;
   }
 
   .typing-text .text {
-    position: absolute; /* Conserve l'absolute pour l'animation */
-    left: 50%; /* Déplace le texte au centre horizontalement */
-    transform: translateX(-50%); /* Ramène le texte au centre */
-    white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
-    text-align: center; /* Centre le texte à l'intérieur de l'élément */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
   }
-}
 
-@media (max-width: 950px) {
-  .row {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablettes */
+  /* Ajustements pour la section Skills */
+  .bubble-container {
+    height: auto;
+  }
+
+  .bubble {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .bubble span {
+    font-size: 1.2rem;
+    bottom: -1.5rem;
   }
 }
 
@@ -760,51 +684,19 @@ span {
     width: 70%;
   }
 
-  .skills .container {
-    width: 90%;
-    padding: 1rem;
-  }
-
   .heading {
     font-size: 6rem;
   }
 
-  .column-wrapper .container {
-    padding: 1rem;
+  /* Ajustements pour la section Skills */
+  .bubble {
+    width: 7rem;
+    height: 7rem;
   }
 
-  .softskills-item,
-  .software-item,
-  .languages-item {
-    max-width: 100%;
-  }
-
-  /* Ajuster les largeurs des éléments */
-  .logo-container {
-    width: 10rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .columns {
-    grid-template-columns: 1fr; /* Une seule colonne par ligne sur très petits écrans */
-  }
-
-  .softskills-item,
-  .software-item,
-  .languages-item {
-    max-width: 100%;
-  }
-
-  /* Ajuster les largeurs des éléments */
-  .logo-container {
-    width: 8rem;
-  }
-  .skills .container {
-    width: 100%;
-    padding: 0.5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .bubble span {
+    font-size: 1rem;
+    bottom: -1rem;
   }
 }
 
@@ -834,5 +726,31 @@ span {
 
   .heading {
     font-size: 5rem;
+  }
+
+  .popup-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .popup-image,
+  .popup-text {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .popup-text {
+    padding-top: 2rem;
+  }
+
+  /* Ajustements pour la section Skills */
+  .bubble {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .bubble span {
+    font-size: 0.8rem;
+    bottom: -0.8rem;
   }
 }
