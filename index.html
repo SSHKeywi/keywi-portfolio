@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!-- Créé par Keywi -->
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Keywi Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Import de Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo" data-i18n="logo">Keywi</a>
+
+        <div class="language-switcher">
+            <button id="en-btn" class="lang-btn">EN</button>
+            <button id="fr-btn" class="lang-btn">FR</button>
+        </div>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" data-i18n="nav.home">Home</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#Education" data-i18n="nav.education">Formation</a>
+            <a href="#Experience" data-i18n="nav.experience">Experience</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="/assets/img/home-img.jpg" alt="Image de bienvenue">
+        </div>
+
+        <div class="home-content">
+            <!-- Balise h1 avec texte fixe et nom en span -->
+            <h1 data-i18n="greeting">Hello, I'm <span class="name">Keywi</span></h1>
+
+            
+            
+
+            <!-- Balise h3 avec texte fixe et effet de saisie -->
+            <h3 class="nowrap" data-i18n="jobTitle">An</h3>
+            <h3 class="typing-text">
+                <span class="wrapper">
+                    <span class="text" data-i18n="jobs.pentester">Apprentice Pentester</span>
+                    <span class="text" data-i18n="jobs.infrastructureAdmin">Infrastructure Administrator</span>
+                    <span class="text" data-i18n="jobs.photographer">Photographer</span>
+                </span>
+            </h3>
+            
+            
+
+            <!-- Autres contenus -->
+            <p data-i18n="home.paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus aspernatur eaque harum esse accusantium? Magnam deserunt, dignissimos similique corrupti assumenda quasi tempora cumque eum ex laborum molestias cupiditate beatae perspiciatis!
+            </p>
+
+            <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+
+            <a href="#" class="btn" data-i18n="home.hireMe">Hire Me</a>
+        </div>
+    </section>
+    
+    
+
+    <section class="skills" id="skills">
+        <h2 class="heading" data-i18n="skills.heading">Skills</h2>
+        <div class="line"></div>
+        
+        <!-- Groupe de colonnes (Softskills, Software, Langues) -->
+        <div class="columns">
+            <!-- Colonne Softskills -->
+            <div class="column-wrapper">
+                <h2 class="sub-heading">Softskills</h2>
+                <div class="container">
+                    <div class="row softskillsContainer">
+                        <!-- Softskills Items -->
+                        <div class="softskills-item">
+                            <div class="content-wrapper" onclick="openPopup('problemSolvingPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/problem-solving.png" alt="Problem Solving" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.problemSolving">Problem Solving</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for Problem Solving -->
+                        <div id="problemSolvingPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('problemSolvingPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/problem-solving.png" alt="Problem Solving" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.problemSolving">Problem Solving</h2>
+                                        <p data-i18n="skills.problemSolving.description">Problem Solving is the ability to identify, analyze, and solve complex problems effectively by evaluating different solutions and making informed decisions.</p><br>
+                                        <p data-i18n="skills.problemSolving.description2">Problem Solving involves critical thinking, creativity, and logical reasoning to overcome challenges and achieve desired outcomes.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Project</a>
+                                            <a href="#" data-i18n="">#ProblemSolving</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Softskills Items -->
+                        <div class="softskills-item">
+                            <div class="content-wrapper" onclick="openPopup('communicationPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/communication.png" alt="Communication" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.communication">Communication</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for Communication -->
+                        <div id="communicationPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('communicationPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/communication.png" alt="Communication" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.communication">Communication</h2>
+                                        <p data-i18n="skills.communication.description">Communication is the exchange of information, ideas, and emotions between individuals or groups through verbal, non-verbal, and written channels to convey messages effectively.</p><br>
+                                        <p data-i18n="skills.communication.description2">Communication involves active listening, empathy, clarity, and feedback to build relationships, resolve conflicts, and collaborate with others.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Project</a>
+                                            <a href="#" data-i18n="">#Communication</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Softskills Items -->
+                        <div class="softskills-item">
+                            <div class="content-wrapper" onclick="openPopup('teamworkPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/teamwork.png" alt="Teamwork" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.teamwork">Teamwork</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for Teamwork -->
+                        <div id="teamworkPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('teamworkPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/teamwork.png" alt="Teamwork" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.teamwork">Teamwork</h2>
+                                        <p data-i18n="skills.teamwork.description">Teamwork is the collaborative effort of individuals working together to achieve common goals, share responsibilities, and support each other to enhance productivity and performance.</p><br>
+                                        <p data-i18n="skills.teamwork.description2">Teamwork involves effective communication, trust, respect, and cooperation to build strong relationships, foster creativity, and solve problems collectively.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Project</a>
+                                            <a href="#" data-i18n="">#Teamwork</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Softskills Items -->
+                        <div class="softskills-item">
+                            <div class="content-wrapper" onclick="openPopup('adaptabilityPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/adaptability.png" alt="Adaptability" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.adaptability">Adaptability</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for Adaptability -->
+                        <div id="adaptabilityPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('adaptabilityPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/adaptability.png" alt="Adaptability" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.adaptability">Adaptability</h2>
+                                        <p data-i18n="skills.adaptability.description">Adaptability is the ability to adjust to new situations, challenges, and environments by being flexible, open-minded, and resilient to change to thrive in dynamic and uncertain conditions.</p><br>
+                                        <p data-i18n="skills.adaptability.description2">Adaptability involves problem-solving, creativity, and emotional intelligence to learn, grow, and succeed in diverse personal and professional contexts.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Project</a>
+                                            <a href="#" data-i18n="">#Adaptability</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Colonne Software avec barre défilante -->
+            <div class="column-wrapper">
+                <h2 class="sub-heading">Software</h2>
+                <div class="container">
+                    <div class="softwareContainer scroll-container">
+                        <!-- Software Wireshark -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('wiresharkPopup')">
+                            <div class="logo-container">
+                                <img src="/assets/img/wireshark.png" alt="Wireshark" class="software-logo">
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                <span>Wireshark</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Popup HTML for Wireshark -->
+                        <div id="wiresharkPopup" class="popup">
+                            <div class="popup-content">
+                            <span class="close" onclick="closePopup('wiresharkPopup')">&times;</span>
+                            <div class="popup-container">
+                                <div class="popup-image">
+                                <img src="/assets/img/wireshark.png" alt="Wireshark" class="popup-logo">
+                                </div>
+                                <div class="popup-text">
+                                <h2 data-i18n="skills.wireshark.name">Wireshark</h2>
+                                <p data-i18n="skills.wireshark.description">Wireshark is an open-source network packet analyzer. It is used to capture and analyze network traffic in real-time and troubleshoot network issues.</p><br>
+                                <p data-i18n="skills.wireshark.description2">Wireshark is commonly used to analyze network protocols, detect performance issues, and enhance network security.</p>
+                                <div class="lexique-btn">
+                                    <a href="#" data-i18n="">#Project</a>
+                                    <a href="#" data-i18n="">#Tryhackme</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Software Burpsuite -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('burpsuitePopup')">
+                            <div class="logo-container">
+                                <img src="/assets/img/Burpsuite.png" alt="Burpsuite" class="software-logo">
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                <span data-i18n="skills.burpsuite.name">Burpsuite</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Popup HTML for Burpsuite -->
+                        <div id="burpsuitePopup" class="popup">
+                            <div class="popup-content">
+                            <span class="close" onclick="closePopup('burpsuitePopup')">&times;</span>
+                            <div class="popup-container">
+                                <div class="popup-image">
+                                <img src="/assets/img/Burpsuite.png" alt="Burpsuite" class="popup-logo">
+                                </div>
+                                <div class="popup-text">
+                                <h2 data-i18n="skills.burpsuite.name">Burpsuite</h2>
+                                <p data-i18n="skills.burpsuite.description">Burpsuite is a web application security testing tool. It helps identify and exploit vulnerabilities in web applications through penetration testing.</p><br>
+                                <p data-i18n="skills.burpsuite.description2">Burpsuite is used to intercept and modify HTTP requests, scan for vulnerabilities, and test for SQL injection, XSS, CSRF, and more.</p>
+                                <div class="lexique-btn">
+                                    <a href="#" data-i18n="">#Project</a>
+                                    <a href="#" data-i18n="">#Tryhackme</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Software Nmap -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('nmapPopup')">
+                            <div class="logo-container">
+                                <img src="/assets/img/nmap.png" alt="nmap" class="software-logo">
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                <span data-i18n="skills.nmap.name">Nmap</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Popup HTML for nmap -->
+                        <div id="nmapPopup" class="popup">
+                            <div class="popup-content">
+                            <span class="close" onclick="closePopup('nmapPopup')">&times;</span>
+                            <div class="popup-container">
+                                <div class="popup-image">
+                                <img src="/assets/img/nmap.png" alt="nmap" class="popup-logo">
+                                </div>
+                                <div class="popup-text">
+                                <h2 data-i18n="skills.nmap.name">Nmap</h2>
+                                <p data-i18n="skills.nmap.description">Nmap is an open-source port scanner. It is used to discover hosts and services on a network and audit network security.</p><br>
+                                <p data-i18n="skills.nmap.description2">Nmap is commonly used to scan ports, detect operating systems, find running services, and test network security.</p>
+                                <div class="lexique-btn">
+                                    <a href="#" data-i18n="">#Project</a>
+                                    <a href="#" data-i18n="">#Tryhackme</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Software Metasploit -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('metasploitPopup')">
+                            <div class="logo-container">
+                                <img src="/assets/img/metasploit.png" alt="Metasploit" class="software-logo">
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                <span data-i18n="skills.metasploit.name">Metasploit</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Popup HTML for Metasploit -->
+                        <div id="metasploitPopup" class="popup">
+                            <div class="popup-content">
+                            <span class="close" onclick="closePopup('metasploitPopup')">&times;</span>
+                            <div class="popup-container">
+                                <div class="popup-image">
+                                <img src="/assets/img/metasploit.png" alt="Metasploit" class="popup-logo">
+                                </div>
+                                <div class="popup-text">
+                                <h2 data-i18n="skills.metasploit.name">Metasploit</h2>
+                                <p data-i18n="skills.metasploit.description">Metasploit is a penetration testing framework used to exploit known vulnerabilities and test system security through simulated attacks.</p><br>
+                                <p data-i18n="skills.metasploit.description2">Metasploit is commonly used to run payloads, create exploits, and simulate attacks to test the robustness of a system.</p>
+                                <div class="lexique-btn">
+                                    <a href="#" data-i18n="">#Project</a>
+                                    <a href="#" data-i18n="">#Tryhackme</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Software Aircrack-ng -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('aircrackPopup')">
+                            <div class="logo-container">
+                                <img src="/assets/img/aircrack-ng.png" alt="Aircrack-ng" class="software-logo">
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                <span data-i18n="skills.aircrack.name">Aircrack-ng</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Popup HTML for Aircrack-ng -->
+                        <div id="aircrackPopup" class="popup">
+                            <div class="popup-content">
+                            <span class="close" onclick="closePopup('aircrackPopup')">&times;</span>
+                            <div class="popup-container">
+                                <div class="popup-image">
+                                <img src="/assets/img/aircrack-ng.png" alt="Aircrack-ng" class="popup-logo">
+                                </div>
+                                <div class="popup-text">
+                                <h2 data-i18n="skills.aircrack.name">Aircrack-ng</h2>
+                                <p data-i18n="skills.aircrack.description">Aircrack-ng is a suite of tools used to assess WiFi network security by capturing packets and attempting to crack passwords using different attack methods.</p><br>
+                                <p data-i18n="skills.aircrack.description2">Aircrack-ng is often used to analyze WEP, WPA, and WPA2 security, monitor wireless traffic, and detect network vulnerabilities.</p>
+                                <div class="lexique-btn">
+                                    <a href="#" data-i18n="">#Project</a>
+                                    <a href="#" data-i18n="">#Tryhackme</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Software DirBuster -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('dirbusterPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/dirbuster.png" alt="DirBuster" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.dirbuster.name">DirBuster</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Popup HTML for DirBuster -->
+                        <div id="dirbusterPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('dirbusterPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/dirbuster.png" alt="DirBuster" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.dirbuster.name">DirBuster</h2>
+                                        <p data-i18n="skills.dirbuster.description">DirBuster is a directory and file brute-forcing tool used to discover hidden directories and files on a web server through brute-force attacks.</p><br>
+                                        <p data-i18n="skills.dirbuster.description2">DirBuster is commonly used to uncover sensitive files and directories that are not publicly accessible but can be exploited through improper security measures.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Project</a>
+                                            <a href="#" data-i18n="">#Tryhackme</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Software CrowdStrike -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('crowdstrikePopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/crowdstrike.png" alt="CrowdStrike" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.crowdstrike.name">CrowdStrike</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Popup HTML for CrowdStrike -->
+                        <div id="crowdstrikePopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('crowdstrikePopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/crowdstrike.png" alt="CrowdStrike" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.crowdstrike.name">CrowdStrike</h2>
+                                        <p data-i18n="skills.crowdstrike.description">CrowdStrike is a cloud-native endpoint protection platform that leverages AI and behavioral analytics to detect and prevent advanced cyber threats in real-time.</p><br>
+                                        <p data-i18n="skills.crowdstrike.description2">CrowdStrike is commonly used for incident response, threat hunting, and endpoint security management to protect organizations from cyber attacks.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Project</a>
+                                            <a href="#" data-i18n="">#ThreatHunting</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Software ServiceNow -->
+                        <div class="software-item">
+                            <div class="content-wrapper" onclick="openPopup('servicenowPopup')">
+                              <div class="logo-container">
+                                <img src="/assets/img/snow.png" alt="ServiceNow" class="software-logo">
+                              </div>
+                              <div class="bar">
+                                <div class="info">
+                                  <span data-i18n="skills.servicenow.name">ServiceNow</span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                          
+                          <!-- Popup HTML for ServiceNow -->
+                          <div id="servicenowPopup" class="popup">
+                            <div class="popup-content">
+                              <span class="close" onclick="closePopup('servicenowPopup')">&times;</span>
+                              <div class="popup-container">
+                                <div class="popup-image">
+                                  <img src="/assets/img/snow.png" alt="ServiceNow" class="popup-logo">
+                                </div>
+                                <div class="popup-text">
+                                  <h2 data-i18n="skills.servicenow.name">ServiceNow</h2>
+                                  <p data-i18n="skills.servicenow.description">ServiceNow is a cloud-based platform designed to automate IT service management (ITSM) and streamline business processes through workflow automation.</p><br>
+                                  <p data-i18n="skills.servicenow.description2">ServiceNow is widely used to improve service delivery, manage incidents, and provide integrated solutions for IT operations and human resources management.</p>
+                                  <div class="lexique-btn">
+                                    <a href="#" data-i18n="">#Project</a>
+                                    <a href="#" data-i18n="">#Automation</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonne Langues -->
+            <div class="column-wrapper">
+                <h2 class="sub-heading">Langues</h2>
+                <div class="container">
+                    <div class="row languagesContainer">
+                        <!-- Langues Items -->
+                        <div class="languages-item">
+                            <div class="content-wrapper" onclick="openPopup('frenchPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/french.png" alt="French" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.french">French</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for French -->
+                        <div id="frenchPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('frenchPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/french.png" alt="French" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.french">French</h2>
+                                        <p data-i18n="skills.french.description">French is a Romance language spoken by over 220 million people worldwide. It is the official language of 29 countries and is widely used in international organizations.</p><br>
+                                        <p data-i18n="skills.french.description2">French is known for its rich culture, literature, and art. It is also one of the working languages of the United Nations, the European Union, and the International Red Cross.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Language</a>
+                                            <a href="#" data-i18n="">#French</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Langues Items -->
+                        <div class="languages-item">
+                            <div class="content-wrapper" onclick="openPopup('englishPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/english.png" alt="English" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.english">English</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for English -->
+                        <div id="englishPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('englishPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/english.png" alt="English" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.english">English</h2>
+                                        <p data-i18n="skills.english.description">English is a West Germanic language spoken by over 1.5 billion people worldwide. It is the official language of 54 countries and is widely used in business, science, and entertainment.</p><br>
+                                        <p data-i18n="skills.english.description2">English is known for its global influence, diversity, and versatility. It is also one of the most commonly learned second languages in the world.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Language</a>
+                                            <a href="#" data-i18n="">#English</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Langues Items Python-->
+                        <div class="languages-item">
+                            <div class="content-wrapper" onclick="openPopup('pythonPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/python.png" alt="Python" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.python">Python</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for Python -->
+                        <div id="pythonPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('pythonPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/python.png" alt="Python" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.python">Python</h2>
+                                        <p data-i18n="skills.python.description">Python is a high-level programming language known for its simplicity, readability, and versatility. It is widely used for web development, data analysis, and automation.</p><br>
+                                        <p data-i18n="skills.python.description2">Python is popular for its extensive libraries, frameworks, and community support. It is often used for machine learning, artificial intelligence, and scientific computing.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Language</a>
+                                            <a href="#" data-i18n="">#Python</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Langues Items JavaScript-->
+                         <div class="languages-item">
+                            <div class="content-wrapper" onclick="openPopup('javascriptPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/javascript.png" alt="JavaScript" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.javascript">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+
+                        <!-- Popup HTML for JavaScript -->
+                        <div id="javascriptPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('javascriptPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/javascript.png" alt="JavaScript" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.javascript">JavaScript</h2>
+                                        <p data-i18n="skills.javascript.description">JavaScript is a high-level programming language used to create interactive and dynamic web content. It is widely used for front-end and back-end development.</p><br>
+                                        <p data-i18n="skills.javascript.description2">JavaScript is known for its versatility, speed, and compatibility. It is often used for web applications, games, and server-side programming.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Language</a>
+                                            <a href="#" data-i18n="">#JavaScript</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Langues Items Bash-->
+                        <div class="languages-item">
+                            <div class="content-wrapper" onclick="openPopup('bashPopup')">
+                                <div class="logo-container">
+                                    <img src="/assets/img/bash.png" alt="Bash" class="software-logo">
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span data-i18n="skills.bash">Bash</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popup HTML for Bash -->
+                        <div id="bashPopup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" onclick="closePopup('bashPopup')">&times;</span>
+                                <div class="popup-container">
+                                    <div class="popup-image">
+                                        <img src="/assets/img/bash.png" alt="Bash" class="popup-logo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <h2 data-i18n="skills.bash">Bash</h2>
+                                        <p data-i18n="skills.bash.description">Bash is a Unix shell and command language used to interact with the operating system, execute commands, and automate tasks through scripts and programs.</p><br>
+                                        <p data-i18n="skills.bash.description2">Bash is known for its simplicity, speed, and flexibility. It is often used for system administration, file management, and software development.</p>
+                                        <div class="lexique-btn">
+                                            <a href="#" data-i18n="">#Language</a>
+                                            <a href="#" data-i18n="">#Bash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery-i18next@1.2.1/dist/umd/jquery-i18next.min.js"></script>
+    <script src="/assets/js/lang.js"></script>
+
+</body>
+
+</html>
